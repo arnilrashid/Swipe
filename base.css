@@ -44,7 +44,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: var(--bg-light);
+  background-color: var(--bg-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,4 +274,32 @@ main {
 .hero-phone {
   height: 628px;
   transform: translate(32px, -32px);
+}
+/* partners section */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: var(--spacing-xl) 0;
+  gap: var(--spacing-lg) var(--spacing-md);
+}
+.partners-grid img {
+  height: 60px;
+  place-self: center;
+}
+/* unified platform */
+.unified-platform-section {
+  padding: var(--spacing-xl) 0;
+}
+.unified-platform-section .primary-button {
+  background-color: var(--purple-1);
+  margin: var(--spacing-md) 0;
+}
+.unified-platform-section .primary-button:hover {
+  background-color: var(--primary-accent);
+}
+.unified-platform-section h2 {
+  width: 50%;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
 }
