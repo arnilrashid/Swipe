@@ -52,6 +52,10 @@ body {
   align-items: center;
 }
 
+main {
+  width: 100%;
+}
+
 h1 {
   font-family: var(--heading-font);
   font-weight: 600;
@@ -282,6 +286,11 @@ main {
   margin-left: var(--spacing-md);
   color: var(--purple-2);
 }
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .hero p {
   max-width: 480px;
 }
@@ -294,6 +303,11 @@ main {
   transform: translate(32px, -32px);
 }
 /* partners section */
+.partners-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .partners-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -307,6 +321,9 @@ main {
 }
 /* unified platform */
 .unified-platform-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   padding: var(--spacing-xl) 0;
 }
 .unified-platform-section .primary-button {
@@ -317,11 +334,16 @@ main {
   background-color: var(--primary-accent);
 }
 .unified-platform-section h2 {
-  width: 100%;
+  width: 50%;
   font-weight: 600;
   margin-bottom: var(--spacing-md);
 }
 /* Graphic-grid */
+.graphic-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .graphic-grid {
   display: grid;
   grid-template-areas:
@@ -355,6 +377,9 @@ main {
 .integrations-section {
   color: var(--text-light);
   background-color: var(--primary-accent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .integrations-section .primary-button {
@@ -372,7 +397,7 @@ main {
 }
 
 .integrations-section .card-container .card {
-  width: 40%;
+  width: 50%;
 }
 
 .integrations-section .secondary-button {
@@ -388,4 +413,63 @@ main {
 #terminal-code {
   max-width: 470px;
   border-radius: 20px;
+}
+
+/* Why Swipe */
+.why-swipe-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.why-swipe-section .card-container {
+  display: flex;
+  margin: var(--spacing-lg) 0;
+}
+.why-swipe-section .card-container .card {
+  width: 25%;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-sm) 0 0;
+  box-sizing: border-box;
+}
+.why-swipe-section .secondary-text {
+  color: var(--text-dark);
+}
+/* global section */
+.global-section {
+  background-color: var(--primary-accent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--text-light);
+  position: relative;
+  padding: calc(var(--spacing-xl) * 2);
+}
+
+.global-section a {
+  color: var(--blue-1);
+}
+
+.global-section a:hover {
+  color: var(--text-light);
+}
+.global-section .card-container {
+  display: flex;
+  margin: calc(var(--spacing-xl) * 2) 0;
+}
+.global-section .card-container .card {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
+}
+.global-section .card-container .card h3 {
+  border-left: 2px var(--blue-1) solid;
+  padding-left: var(--spacing-sm);
+  line-height: 28px;
+}
+#globe {
+  max-width: 844px;
+  opacity: 25%;
+  position: absolute;
+  top: 10%;
 }
